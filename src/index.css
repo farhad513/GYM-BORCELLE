@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    /* --primary-hue: 210; */
+    /* --gry-hue: 240; --primary-color: #16146A; */
+
+    /* --color-primary: hsl(var(var(--primary-hue), 100%, 50%)) */
+    --primary-color: #1f1e72;
+    --bgColor: #112738;
+    --fontColor: #fff;
+    --container-width-lg: 90%;
+    --container-width-md: 80%;
+
+}
+
+body {
+    background-color: var(--bgColor);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1920;
+    margin-inline: auto;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    color: var(--fontColor);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--fontColor);
+}
+
+img {
+    display: flex;
+    object-fit: cover;
+    width: 100%;
+}
